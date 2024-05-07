@@ -14,6 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: STNS
+    - name: STNSIDB
       run: ./init-db -data=data.json
+    - name: STNSSS
       run: ./tinode
